@@ -1,0 +1,12 @@
+<h1>AngularDart with Firebase and Appengine</h1>
+
+<nav>
+  <a [routerLink]="['Home']">Go to home(/)</a><br>
+  <a [routerLink]="['Some']">Go to auth required page(/some)</a><br>
+  <a [routerLink]="['SignIn']">Go to sign in(/sign-in)</a><br>
+  <br>
+  <button (click)="signOut()" *ngIf="isSignedIn">Sign Out</button><br>
+</nav>
+
+<br>
+<router-outlet></router-outlet>

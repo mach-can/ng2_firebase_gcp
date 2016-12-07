@@ -1,0 +1,1 @@
+This is an example for http://qiita.com/ntaoo/items/5ac40ce8cecf9402169c (Japanese).
