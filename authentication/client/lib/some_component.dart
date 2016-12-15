@@ -11,6 +11,6 @@ import 'package:client/model/service/auth_service.dart';
     template: 'Some auth required component. user is {{authService.user.displayName}}')
 @CanActivate(checkAuthenticated)
 class SomeComponent {
-  AuthService authService;
+  final AuthService authService;
   SomeComponent(this.authService);
 }

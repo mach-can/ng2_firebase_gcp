@@ -11,7 +11,8 @@ class AuthService {
   final StreamController<bool> _onAuthStateChangedController;
 
   /// Nullable. If null, it means that firebase authentication process has not been completed yet (intermediate state).
-  User user;
+  User _user;
+  User get user => _user;
 
   /// This getter doesn't care the intermediate state. Use [checkUserAuthenticated()] if that state is possibility.
   bool get isUserAuthenticated => user is AuthenticatedUser;
@@ -64,8 +65,9 @@ class AuthService {
   }
 
   void _handleOnAuthStateChanged(firebase.AuthEvent event) {
-    var u = event.user;
-    user = u != null ? new AuthenticatedUser(u) : new GuestUser();
+    _user = event.user != null
+        ? new AuthenticatedUser(event.user)
+        : new GuestUser();
   }
 
   Future _runBackendAuthorization(firebase.UserCredential credential) async {

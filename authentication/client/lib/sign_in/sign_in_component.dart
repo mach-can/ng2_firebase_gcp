@@ -8,7 +8,7 @@ import 'package:client/model/service/auth_service.dart';
 class SignInComponent implements OnInit {
   final AuthService _authService;
   final Router _router;
-  String _willRedirectKey = 'willRedirectFromFirebase';
+  final String _willRedirectKey = 'willRedirectFromFirebase';
   bool _redirectedFromFirebase() =>
       window.sessionStorage.containsKey(_willRedirectKey);
   bool get loading => _redirectedFromFirebase();
