@@ -1,13 +1,13 @@
 name: client
 description: Firebase Authentication Example
-version: 0.0.1
+version: 0.0.2
 environment:
   sdk: '>=1.19.1 <2.0.0'
 dependencies:
   angular2: ^2.0.0
   browser: ^0.10.0
   dart_to_js_script_rewriter: ^1.0.1
-  firebase3:
+  firebase:
   http:
 transformers:
 - angular2:

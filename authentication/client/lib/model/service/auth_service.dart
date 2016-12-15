@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:angular2/angular2.dart';
-import 'package:firebase3/firebase.dart' as firebase;
+import 'package:firebase/firebase.dart' as firebase;
 import 'package:http/browser_client.dart' as http;
 import 'package:client/model/service/firebase_service.dart';
 import 'package:client/model/user/user.dart';

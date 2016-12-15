@@ -1,4 +1,4 @@
-import 'package:firebase3/firebase.dart' as firebase;
+import 'package:firebase/firebase.dart' as firebase;
 import 'user.dart';
 
 class AuthenticatedUser implements User {

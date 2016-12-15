@@ -97,12 +97,12 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.2"
-  firebase3:
+  firebase:
     description:
-      name: firebase3
+      name: firebase
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.2.2"
+    version: "3.0.0"
   fixnum:
     description:
       name: fixnum
